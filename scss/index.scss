@@ -1,0 +1,75 @@
+
+@import 'variables';
+@import 'color_style_dark';
+@import 'mixins';
+
+
+%borderouter{
+	margin-top: 5px*4;
+	border-top: $block_border;
+	border-bottom: $block_border; 
+	padding-top: 50px-10;
+}
+.banner{
+	@include large-text; 
+	@include text-shadow(2px, 3px, 2px, $navcolor); 
+
+	p{
+	color: $colorbaner;
+	font-size: 26px;
+	@include text-shadow(1px, 1px, 5px, rgba(106, 0, 130, 0.75) + rgba(0, 91, 6, 0.75)); 
+
+	}
+}
+#Contact{
+	background-color: $navcolor;
+	min-height: 50px;
+	flex-wrap: wrap;
+}
+.nav{
+	@include navlink($linkcolor, $lvisit, $lhover, $lactive);
+	@extend #Contact;
+}
+.jumbotron{
+	background-color: $jumbcolor;
+	color: $jumbtext;
+	@include border-radius(10px); 
+	@include cool-border($jcolor, 4px);
+}
+.carousel-caption{
+	top:150px / 960px * 100%;;
+	h1{
+ 		font-size: 5rem;
+	}
+}
+.information {
+	h1{
+	color: $infoHcolor;
+	}
+	p{
+	color: $infoPcolor;
+	}
+}
+.container {
+	.blockquote{
+	color: $blockquotecolor;
+			.blockquote-footer{ 
+			color:$citecolor;
+			}
+	}
+}
+.block-inf{
+	background-color: $blockbackground; 
+	@extend %borderouter;
+}
+h3{
+	color: $colorheader;
+}
+.hellocat{
+	background-image: url(img/fon.png);
+	background-size: 20%;
+}
+.myblockquote{
+	background-color: $cardcolor;
+}
+

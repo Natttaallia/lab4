@@ -1,0 +1,42 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin navlink ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+@mixin large-text {
+  font: {
+    family: Arial;
+    size: 60px;
+  }
+    font-style: oblique;
+  }
+
+  @mixin cool-border($color, $width) {
+  border: {
+    color: $color;
+    width: $width;
+    style: dashed;
+  }
+}
+@mixin text-shadow($horizOffset, $vertOffset, $blur, $color) {
+    -webkit-text-shadow: $horizOffset $vertOffset $blur $color;
+    -moz-text-shadow: $horizOffset $vertOffset $blur $color;
+    -ms-text-shadow: $horizOffset $vertOffset $blur $color;
+    -o-text-shadow: $horizOffset $vertOffset $blur $color;
+    text-shadow: $horizOffset $vertOffset $blur $color;
+    }
